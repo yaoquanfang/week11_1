@@ -140,9 +140,7 @@ public class MyList2Activity extends ListActivity implements Runnable,AdapterVie
     @Override
     public boolean onItemLongClick(AdapterView<?> parent, View view, final int position, long id) {
         Log.i(TAG, "onItemLongClick: 长按列表项position=" + position);
-        //删除操作
-//        listItems.remove(position);
-//        listItemAdapter.notifyDataSetChanged();
+        
         //构造对话框进行确认操作
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("提示").setMessage("请确认是否删除当前数据").setPositiveButton("是", new DialogInterface.OnClickListener() {
